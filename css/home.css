@@ -1,0 +1,143 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.flags {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.flag {
+    width: 220px;
+    height: 150px;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    padding: 30px 25px;
+}
+
+
+/* media queries  */
+
+/* mobile device */
+
+@media only screen and (max-width:688px) {
+    .conatiner {
+        width: 100%;
+    }
+
+    .header{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 1199px;
+        margin-left: 0px;
+    }
+
+    .text-area {
+        text-align: center;
+        align-items: center;
+    }
+
+    .banner img {
+        margin-top: 163px;
+        padding-left: 20px;
+    }
+
+    .side-bar {
+        margin-bottom: 100px;
+        width: 270px;
+        height: 220px;
+        justify-content: center;
+        padding: 20px 10px;
+        background-color: #FFFFFF;
+    }
+.blogs-section{
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 80%;
+}
+    .flags {
+        background-color: none;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer{
+        position: static;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    .menu, .socials{
+        flex-direction: column;
+    }
+
+    .socials{
+        margin-bottom: 5px;
+    }
+}
+
+/* tablet Device */
+
+@media only screen and (min-width: 689px) and (max-width: 991px) {
+    .conatiner {
+        width: 100%;
+    }
+
+    .header {
+        width: 100%;
+        height: 100%;
+}
+    
+
+    .text-area h1 {
+        font-size: 30px;
+    }
+
+    .text-area p {
+        font-size: 14px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .ellipsis{
+        cursor: pointer;
+        font-size: 13px;
+        color: gray;
+        position: absolute;
+        bottom: 3px;
+        box-sizing: border-box;
+    }
+
+    .banner img {
+        height: 340px;
+        left: 444px;
+    }
+
+
+    .side-bar {
+        display: flex;
+        width: 50%;
+        width: 270px;
+        height: 220px;
+        padding: 20px 200px;
+        background-color: #FFFFFF;
+    }
+
+    .blogs-section {
+        flex-direction: column;
+        width: 50%;
+        height: 80%;
+    }
+
+    .flags {
+        flex-direction: column;
+        width: 50%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
